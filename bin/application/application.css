@@ -1,0 +1,32 @@
+.root{
+	-fx-background-image:url('BulletinBoard.jpg')
+
+}
+/*button means all buttons are being styled like this*/
+.button{
+	-fx-background-color: #303139;
+	-fx-text-fill: #F75590;
+}
+.button:hover{
+	-fx-background-color: #F75590;
+	-fx-text-fill: #303139;
+	
+}
+.toolBar{
+	-fx-background-color: #BAB2DB;
+}
+.rectangleBorder{
+	-fx-border-width: 0
+}
+.anch{
+	/*on mouse click change shadow, on mouse release change back, with maybe animation (FUTURE) */
+	-fx-background-color: linear-gradient(to bottom right, #f2de79, #f2d649);
+	-fx-effect: dropshadow(one-pass-box, black, 5, 0, 2, 2);
+	-fx-background-radius: 6;
+}
+.textField{
+	-fx-background-color: transparent;
+}
+.txt{
+	-fx-background-color: #173139;
+}

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Rectangle?>
+
+<AnchorPane fx:id="cork" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1280.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="865.0" layoutY="35.0" stroke="BLACK" strokeType="INSIDE" styleClass="rectangleBorder" width="20.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="1240.0" layoutX="630.0" layoutY="-575.0" rotate="90.0" stroke="BLACK" strokeType="INSIDE" styleClass="rectangleBorder" width="20.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="865.0" layoutX="1260.0" layoutY="35.0" stroke="BLACK" strokeType="INSIDE" styleClass="rectangleBorder" width="20.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="1240.0" layoutX="630.0" layoutY="270.0" rotate="-90.0" stroke="BLACK" strokeType="INSIDE" styleClass="rectangleBorder" width="20.0" />
+      <AnchorPane fx:id="topBar" prefHeight="35.0" prefWidth="1280.0">
+         <children>
+            <HBox alignment="CENTER_RIGHT" prefHeight="0.0" prefWidth="1280.0" styleClass="toolBar" stylesheets="@application.css">
+               <children>
+                  <Button fx:id="exit" alignment="CENTER" mnemonicParsing="false" onAction="#exit" prefHeight="26.0" prefWidth="26.0" stylesheets="@application.css" text="X" textFill="#bd7dc9" />
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </HBox>
+         </children>
+      </AnchorPane>
+      <Button fx:id="show" layoutX="581.0" layoutY="107.0" mnemonicParsing="false" onAction="#showAnch" stylesheets="@application.css" text="Show" textFill="#ae9e9e" />
+   </children>
+</AnchorPane>

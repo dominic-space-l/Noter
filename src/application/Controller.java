@@ -43,6 +43,9 @@ public class Controller implements Initializable{
 		try {
 			System.out.println("height: " + MainNoter.anchPane.getHeight());
 			System.out.println("width: " + MainNoter.anchPane.getWidth());
+			System.out.println("x position " + MainNoter.anchPane.getLayoutX());
+			System.out.println("y position " + MainNoter.anchPane.getLayoutY());
+
 
 			try {
 			TextField retrievedTextField = (TextField) MainNoter.anchPane.getChildren().get(0);
@@ -83,6 +86,9 @@ public class Controller implements Initializable{
 			MainNoter.primaryStage.setX(event.getScreenX() - x);
 			MainNoter.primaryStage.setY(event.getScreenY() - y);
 		});
+		
+		
+		
 		
 
 		

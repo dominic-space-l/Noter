@@ -25,5 +25,7 @@
          </children>
       </AnchorPane>
       <Button fx:id="show" layoutX="581.0" layoutY="107.0" mnemonicParsing="false" onAction="#showAnch" stylesheets="@application.css" text="Show" textFill="#ae9e9e" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="825.0" layoutX="420.0" layoutY="55.0" stroke="BLACK" strokeType="INSIDE" styleClass="rectangleBorder" width="20.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="825.0" layoutX="840.0" layoutY="55.0" stroke="BLACK" strokeType="INSIDE" styleClass="rectangleBorder" width="20.0" />
    </children>
 </AnchorPane>

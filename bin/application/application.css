@@ -21,6 +21,9 @@
 .anch{
 	/*on mouse click change shadow, on mouse release change back, with maybe animation (FUTURE) */
 	-fx-background-color: linear-gradient(to bottom right, #f2de79, #f2d649);
+	-fx-border-color: #bdae5e;
+	-fx-border-width: 1px;
+	-fx-border-radius: 6;
 	-fx-effect: dropshadow(one-pass-box, black, 5, 0, 2, 2);
 	-fx-background-radius: 6;
 }

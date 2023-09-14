@@ -47,10 +47,10 @@ public class MainNoter extends Application {
        create.setOnAction(event -> {
     	  TextField textField = new TextField();
     	  textField.getStyleClass().add("textField");
-    	  textField.setPrefWidth(145.0);
+    	  textField.setPrefWidth(135.0);
     	  AnchorPane anch = new AnchorPane();
-    	  anch.setPrefHeight(145.0);
-    	  anch.setPrefWidth(145.0);
+    	  anch.setPrefHeight(150.0);
+    	  anch.setPrefWidth(150.0);
     	  anch.getStyleClass().add("anch");
     	  anchPane = anch;
     	  
@@ -75,6 +75,8 @@ public class MainNoter extends Application {
     	  root.getChildren().add(anch);
     	  
        });
+       
+
        
        
        root.getChildren().add(create);

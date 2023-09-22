@@ -6,20 +6,53 @@
 .button{
 	-fx-background-color: #303139;
 	-fx-text-fill: #F75590;
+	-fx-font-size: 12;
+
+
 }
 .button:hover{
 	-fx-background-color: #F75590;
 	-fx-text-fill: #303139;
 	
 }
-.toolBar{
-	-fx-background-color: #BAB2DB;
+
+.topBar{
+	-fx-background-color: #dba45c;
+	-fx-pref-height: 35;
 }
-.rectangleBorder{
-	-fx-border-width: 0
+
+.rectangle{
+	
+	-fx-stroke-width: 1;
+	/*, #a35b2f;*/
+	/* #945129;*/
+	
+}
+/*left and top rectangles */
+.rectGradient1{
+	
+	-fx-fill: linear-gradient(to bottom right, #915f29, #824723);
+	
+}
+/*right and bottom rectangles */
+.rectGradient2{
+
+	-fx-fill: linear-gradient(to bottom right, #c98e40, #915f29);
+}
+/*middle rectangles */
+.rectGradient3{
+	-fx-fill: linear-gradient(to bottom right, #874f25, #a36f31);
+}
+.fillRect{
+	-fx-fill: transparent;
+	/* #824723;*/
+	-fx-stroke-width: 0;
+
 }
 .anch{
 	/*on mouse click change shadow, on mouse release change back, with maybe animation (FUTURE) */
+	-fx-pref-width: 150;
+	-fx-pref-height: 150;
 	-fx-background-color: linear-gradient(to bottom right, #f2de79, #f2d649);
 	-fx-border-color: #bdae5e;
 	-fx-border-width: 1px;
@@ -29,7 +62,45 @@
 }
 .textField{
 	-fx-background-color: transparent;
+	-fx-pref-width: 139;
+	-fx-border-color: #bdae5e;
+	-fx-border-radius: 6;
+
 }
-.txt{
-	-fx-background-color: #173139;
+.timeField{
+	-fx-background-color: transparent;
+	-fx-pref-width: 30;
+	-fx-pref-height: 20;
+	-fx-border-color: #bdae5e;
+	-fx-border-radius: 6;
+	
+}
+.timePreference{
+	-fx-background-color: transparent;
+	-fx-text-fill: BLACK;
+	-fx-min-width: 25;
+	-fx-min-height: 20;
+	
+
+
+}
+.timePreference:hover{
+	-fx-background-color: transparent;
+}
+.noterClose{
+	-fx-min-width: 10;
+	-fx-min-height: 10;
+
+	-fx-background-color: transparent;
+	-fx-text-fill: BLACK;
+	-fx-font-size: 12;
+
+}
+.noterClose:hover{
+	-fx-background-color: #e3c639;
+}
+.topLabels{
+	-fx-font-family: "Verdana", sans-serif;
+	-fx-font-size: 17;
+	-fx-text-fill: #dba45c;
 }

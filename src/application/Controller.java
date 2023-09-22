@@ -3,19 +3,12 @@ package application;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
-
-import com.sun.prism.paint.Color;
-
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
-import javafx.scene.layout.Background;
-import javafx.scene.layout.BackgroundFill;
-import javafx.scene.layout.CornerRadii;
-import javafx.scene.shape.Rectangle;
 import javafx.stage.Stage;
 public class Controller implements Initializable{
 	Stage stage;
@@ -38,6 +31,7 @@ public class Controller implements Initializable{
 	//
 	//
 	//******
+	
 	
 	public void showAnch(ActionEvent event){
 		try {
@@ -82,19 +76,15 @@ public class Controller implements Initializable{
 			
 		});
 		
-		topBar.setOnMouseDragged(event ->{
+		topBar.setOnMouseDragged(event -> {
 			MainNoter.primaryStage.setX(event.getScreenX() - x);
 			MainNoter.primaryStage.setY(event.getScreenY() - y);
 		});
 		
-		
-		
-		
 
-		
 
-		
 	}
+	
 	
 
 	

@@ -1,20 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.String?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
 
 <AnchorPane fx:id="cork" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1280.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
    <children>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="865.0" layoutY="35.0" stroke="BLACK" strokeType="INSIDE" styleClass="rectangleBorder" width="20.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="1240.0" layoutX="630.0" layoutY="-575.0" rotate="90.0" stroke="BLACK" strokeType="INSIDE" styleClass="rectangleBorder" width="20.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="865.0" layoutX="1260.0" layoutY="35.0" stroke="BLACK" strokeType="INSIDE" styleClass="rectangleBorder" width="20.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="1240.0" layoutX="630.0" layoutY="270.0" rotate="-90.0" stroke="BLACK" strokeType="INSIDE" styleClass="rectangleBorder" width="20.0" />
-      <AnchorPane fx:id="topBar" prefHeight="35.0" prefWidth="1280.0">
+      <Rectangle fx:id="top" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="1242.0" layoutX="630.0" layoutY="-576.0" rotate="90.0" stroke="BLACK" strokeType="INSIDE" width="20.0">
+         <styleClass>
+            <String fx:value="rectangle" />
+            <String fx:value="rectGradient1" />
+         </styleClass></Rectangle>
+      <Rectangle fx:id="right" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="865.0" layoutX="1260.0" layoutY="35.0" rotate="180.0" stroke="BLACK" strokeType="INSIDE" width="20.0">
+         <styleClass>
+            <String fx:value="rectangle" />
+            <String fx:value="rectGradient2" />
+         </styleClass></Rectangle>
+      <Rectangle fx:id="left" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="865.0" layoutY="35.0" rotate="180.0" stroke="BLACK" strokeType="INSIDE" width="20.0">
+         <styleClass>
+            <String fx:value="rectangle" />
+            <String fx:value="rectGradient1" />
+         </styleClass></Rectangle>
+      <Rectangle fx:id="bottom" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="1242.0" layoutX="630.0" layoutY="269.0" rotate="90.0" stroke="BLACK" strokeType="INSIDE" width="20.0">
+         <styleClass>
+            <String fx:value="rectangle" />
+            <String fx:value="rectGradient1" />
+            <String fx:value="rectGradient2" />
+         </styleClass></Rectangle>
+      <Rectangle fx:id="middleRight" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="827.0" layoutX="840.0" layoutY="54.0" stroke="BLACK" strokeType="INSIDE" width="20.0">
+         <styleClass>
+            <String fx:value="rectangle" />
+            <String fx:value="rectGradient3" />
+         </styleClass></Rectangle>
+      <Rectangle fx:id="middleLeft" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="827.0" layoutX="420.0" layoutY="54.0" stroke="BLACK" strokeType="INSIDE" width="20.0">
+         <styleClass>
+            <String fx:value="rectangle" />
+            <String fx:value="rectGradient3" />
+         </styleClass></Rectangle>
+      <Rectangle fx:id="line1" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="1.0" layoutY="899.0" stroke="BLACK" strokeType="INSIDE" width="157.0" />
+      <Rectangle fx:id="line2" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="1.0" layoutY="35.0" stroke="BLACK" strokeType="INSIDE" width="157.0" />
+      <Rectangle fx:id="line3" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="1.0" layoutX="1123.0" layoutY="35.0" stroke="BLACK" strokeType="INSIDE" width="157.0" />
+      <Rectangle fx:id="line4" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="1.0" layoutX="1180.0" layoutY="899.0" stroke="BLACK" strokeType="INSIDE" width="100.0" />
+      <Rectangle fx:id="fillRect1" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="18.0" layoutX="13.0" layoutY="881.0" stroke="BLACK" strokeType="INSIDE" styleClass="fillRect" width="26.0" />
+      <Rectangle fx:id="fillRect2" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="18.0" layoutX="13.0" layoutY="36.0" stroke="BLACK" strokeType="INSIDE" styleClass="fillRect" width="26.0" />
+      <Rectangle fx:id="fillRect4" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="18.0" layoutX="1241.0" layoutY="881.0" stroke="BLACK" strokeType="INSIDE" styleClass="fillRect" width="26.0" />
+      <Rectangle fx:id="fillRect3" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="18.0" layoutX="1241.0" layoutY="36.0" stroke="BLACK" strokeType="INSIDE" styleClass="fillRect" width="26.0" />
+      <Label fx:id="Do" alignment="CENTER" layoutX="193.0" layoutY="34.0" styleClass="topLabels" stylesheets="@application.css" text="Do" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="Doing" alignment="CENTER" layoutX="603.0" layoutY="34.0" styleClass="topLabels" stylesheets="@application.css" text="Doing" textFill="WHITE">
+         <font>
+            <Font name="Corbel" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="Finished" alignment="CENTER" layoutX="1019.0" layoutY="34.0" styleClass="topLabels" stylesheets="@application.css" text="Finished" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <AnchorPane fx:id="topBar" prefHeight="35.0" prefWidth="1280.0" style="-fx-border-color: BLACK;" styleClass="topBar">
          <children>
-            <HBox alignment="CENTER_RIGHT" prefHeight="0.0" prefWidth="1280.0" styleClass="toolBar" stylesheets="@application.css">
+            <HBox alignment="CENTER_RIGHT" prefHeight="0.0" prefWidth="1278.0" styleClass="toolBar" stylesheets="@application.css">
                <children>
                   <Button fx:id="exit" alignment="CENTER" mnemonicParsing="false" onAction="#exit" prefHeight="26.0" prefWidth="26.0" stylesheets="@application.css" text="X" textFill="#bd7dc9" />
                </children>
@@ -24,8 +77,6 @@
             </HBox>
          </children>
       </AnchorPane>
-      <Button fx:id="show" layoutX="581.0" layoutY="107.0" mnemonicParsing="false" onAction="#showAnch" stylesheets="@application.css" text="Show" textFill="#ae9e9e" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="825.0" layoutX="420.0" layoutY="55.0" stroke="BLACK" strokeType="INSIDE" styleClass="rectangleBorder" width="20.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="825.0" layoutX="840.0" layoutY="55.0" stroke="BLACK" strokeType="INSIDE" styleClass="rectangleBorder" width="20.0" />
+      <Button fx:id="show" layoutX="581.0" layoutY="107.0" minHeight="1.0" mnemonicParsing="false" onAction="#showAnch" prefHeight="35.0" prefWidth="54.0" styleClass="show" text="Show" textFill="#ae9e9e" />
    </children>
 </AnchorPane>

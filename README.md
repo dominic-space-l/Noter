@@ -1,2 +1,2 @@
 # Noter
-1st Project: Noter (name subject to change)
+### A to-do list using sticky notes on a bulletin board
